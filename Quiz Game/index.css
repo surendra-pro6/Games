@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right bottom , #a9adb1,#475c7c);
+    display: grid;
+    place-items: center;
+    color:#fff;
+}
+.container{
+    width: 80%;
+    max-width: 850px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    left: 3rem;
+    display: none;
+}
+
+.container h1{
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    position: relative;
+    right: 3rem;
+}
+
+.container .question{
+    font-size: 26px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.container .choices{
+    margin-top: 20px;
+    position: relative;
+    left: -10%;
+}
+
+.choice{
+    font-size: 20px;
+    background-color: aliceblue;
+    color: #000;
+    margin: 8px auto;
+    padding: 5px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    text-align: left;
+    width: 80%;
+    cursor: pointer;
+}
+
+.choice:hover{
+    background-color: #ddd;
+}
+
+.btn{
+    width: 80%;
+    font-size: 20px;
+    padding: 12px 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #006400;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    right: 4.5rem;
+}
+
+.btn:hover{
+    background-color: #08780c;
+}
+.choice.selected{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.scorecard{
+    font-size: 24px;
+    margin-top: 20px;
+    position: relative;
+    right: 3rem;
+}
+.alert{
+    background-color: #5d9b63;
+    width: 100vw;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.Startbtn{
+    width: 15%;
+    padding-block: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.timer{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #08203e;
+    font-size: 24px;
+    font-weight: 600;
+    border: 2px solid rgb(219, 97, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
