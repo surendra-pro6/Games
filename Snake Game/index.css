@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.body{
+    background: url("background.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background:linear-gradient(rgb(43, 147, 43),rgb(168, 168, 109));
+    border: 1px solid black;
+    width: 63vw;
+    height: 60vh;
+    position: relative;
+    top: -10%;
+    left: 12%;
+    display: grid;
+    grid-template-columns: repeat(22,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient(red,yellow);
+    border-radius: 25%;
+    border: 2px solid purple;
+    transform: scale(1.15);
+}
+.snake{
+    background-color: rgb(128, 0, 2);
+    border-radius: 40%;
+    border: 1px solid white;
+}
+.food{
+    background:linear-gradient(red,purple);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#scorebox{
+    position: absolute;
+    top: 9px;
+    right: 250px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#hiscorebox{
+    position: absolute;
+    top: 9px;
+    right: 450px;
+    font-size: 39px;
+    font-weight: bold;
+}
+@media screen and (max-width:1000px) {
+    #scorebox{
+        position: absolute;
+        top: 9px;
+        right: 300px;
+        font-size: 20px;
+    }
+    #hiscorebox{
+        position: absolute;
+        top: 9px;
+        font-size:20px;
+
+    }
+}
